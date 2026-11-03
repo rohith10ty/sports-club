@@ -3,7 +3,6 @@ import { NavLink, Link, useLocation } from 'react-router-dom';
 import { 
   Menu, 
   X, 
-  Zap, 
   ChevronRight, 
   PhoneCall, 
   Calendar
@@ -53,24 +52,17 @@ export default function Navbar() {
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between">
-            {/* Brand Logo - Clean, bold, without distracting ping marks */}
+            {/* Brand Logo - Pure clean typography without thunder icon */}
             <Link
               to="/"
-              className="flex items-center gap-3 group focus:outline-none"
+              className="flex flex-col group focus:outline-none"
             >
-              <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-brand-volt to-emerald-400 p-[2px] transition-transform duration-300 group-hover:scale-105">
-                <div className="w-full h-full bg-[#06080C] rounded-[10px] flex items-center justify-center">
-                  <Zap className="w-5 h-5 text-brand-volt fill-brand-volt transition-transform group-hover:rotate-12" />
-                </div>
-              </div>
-              <div className="flex flex-col">
-                <span className="text-xl sm:text-2xl font-black tracking-tight text-white uppercase font-sans">
-                  Sports <span className="text-brand-volt">Club</span>
-                </span>
-                <span className="text-[10px] uppercase font-bold tracking-widest text-slate-400 -mt-1 hidden sm:block">
-                  Premier Athletic Campus
-                </span>
-              </div>
+              <span className="text-xl sm:text-2xl font-black tracking-tight text-white uppercase font-sans">
+                Sports <span className="text-brand-volt">Club</span>
+              </span>
+              <span className="text-[10px] uppercase font-bold tracking-widest text-slate-400 -mt-1 hidden sm:block">
+                Premier Athletic Campus
+              </span>
             </Link>
 
             {/* Desktop Navigation Links */}

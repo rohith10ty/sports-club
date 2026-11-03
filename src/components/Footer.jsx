@@ -1,7 +1,6 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { 
-  Zap, 
   MapPin, 
   Phone, 
   Mail, 
@@ -41,14 +40,12 @@ export default function Footer() {
           
           {/* Brand Info */}
           <div className="lg:col-span-2 space-y-4">
-            <Link to="/" className="inline-flex items-center gap-3 group">
-              <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-brand-volt to-emerald-400 p-[2px]">
-                <div className="w-full h-full bg-[#06080C] rounded-[10px] flex items-center justify-center">
-                  <Zap className="w-5 h-5 text-brand-volt fill-brand-volt" />
-                </div>
-              </div>
+            <Link to="/" className="inline-flex flex-col group">
               <span className="text-2xl font-black tracking-tight text-white uppercase">
                 Sports <span className="text-brand-volt">Club</span>
+              </span>
+              <span className="text-[10px] uppercase font-bold tracking-widest text-slate-400 -mt-1">
+                Premier Athletic Campus
               </span>
             </Link>
 
