@@ -11,7 +11,6 @@ import {
   Star
 } from 'lucide-react';
 import Hero from '../components/Hero';
-import StatsSection from '../components/StatsSection';
 import SportCard from '../components/SportCard';
 import CoachCard from '../components/CoachCard';
 import EventCard from '../components/EventCard';
@@ -26,13 +25,10 @@ export default function HomePage({ onOpenRegister, onOpenBooking }) {
 
   return (
     <div className="min-h-screen bg-[#06080C] text-slate-100">
-      {/* 1. CINEMATIC HERO SECTION (Vivid, High Opacity Stadium Background) */}
-      <Hero onOpenRegister={onOpenRegister} onOpenBooking={onOpenBooking} />
+      {/* 1. CINEMATIC FULL VIEWPORT HERO WITH DOCKED STATS BAR */}
+      <Hero onOpenRegister={onOpenRegister} />
 
-      {/* 2. STATS & ACCREDITATIONS BAR */}
-      <StatsSection />
-
-      {/* 3. CAMPUS SHOWCASE SECTION (Built For Athletes - 2-Column Campus Layout) */}
+      {/* 2. CAMPUS SHOWCASE SECTION (Built For Athletes - 2-Column Campus Layout) */}
       <section className="py-16 lg:py-24 relative overflow-hidden bg-[#070A10] border-b border-white/10">
         <div className="absolute top-1/2 left-0 w-80 h-80 bg-brand-volt/5 blur-3xl pointer-events-none" />
         
