@@ -1,9 +1,12 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { 
+  Trophy,
   ChevronRight, 
   Flame, 
   ArrowRight,
+  ShieldCheck,
+  HeartPulse,
   CheckCircle2,
   Star
 } from 'lucide-react';
@@ -23,13 +26,127 @@ export default function HomePage({ onOpenRegister, onOpenBooking }) {
 
   return (
     <div className="min-h-screen bg-[#06080C] text-slate-100">
-      {/* 1. HERO SECTION - 2-Column Athletic Campus Showcase with Higher Opacity Background */}
+      {/* 1. CINEMATIC HERO SECTION (Vivid, High Opacity Stadium Background) */}
       <Hero onOpenRegister={onOpenRegister} onOpenBooking={onOpenBooking} />
 
       {/* 2. STATS & ACCREDITATIONS BAR */}
       <StatsSection />
 
-      {/* 3. FEATURED SPORTS ACTIVITIES (Moved directly here as requested) */}
+      {/* 3. CAMPUS SHOWCASE SECTION (Built For Athletes - 2-Column Campus Layout) */}
+      <section className="py-16 lg:py-24 relative overflow-hidden bg-[#070A10] border-b border-white/10">
+        <div className="absolute top-1/2 left-0 w-80 h-80 bg-brand-volt/5 blur-3xl pointer-events-none" />
+        
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-14 items-center">
+            
+            {/* Left Column: Campus Visual Showcase */}
+            <div className="relative">
+              <div className="relative z-10 rounded-3xl overflow-hidden border border-white/10 shadow-2xl shadow-black/80 bg-[#0e1420]">
+                <img
+                  src="https://images.unsplash.com/photo-1522778119026-d647f0596c20?auto=format&fit=crop&w=1200&q=80"
+                  alt="Sports Club Campus"
+                  onError={(e) => {
+                    e.target.onerror = null;
+                    e.target.src = 'https://images.unsplash.com/photo-1574629810360-7efbbe195018?auto=format&fit=crop&w=1200&q=80';
+                  }}
+                  className="w-full h-[360px] sm:h-[440px] object-cover"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-[#06080C] via-transparent to-transparent" />
+                
+                {/* Floating badge inside image */}
+                <div className="absolute bottom-5 left-5 right-5 p-4 rounded-2xl bg-[#0e131d]/90 backdrop-blur-md border border-white/10 flex items-center justify-between">
+                  <div>
+                    <span className="text-[10px] uppercase font-bold tracking-widest text-brand-volt">
+                      State-of-the-Art Complex
+                    </span>
+                    <h4 className="text-white font-extrabold text-sm sm:text-base">
+                      25-Acre Olympic Grade Arenas
+                    </h4>
+                  </div>
+                  <Link
+                    to="/about"
+                    className="p-2.5 rounded-xl bg-brand-volt text-black hover:bg-[#bdec00] transition-colors"
+                    title="Read Our Story"
+                  >
+                    <ArrowRight className="w-4 h-4" />
+                  </Link>
+                </div>
+              </div>
+
+              {/* Decorative side accent card */}
+              <div className="hidden sm:block absolute -bottom-5 -right-5 z-20 p-5 rounded-2xl bg-gradient-to-br from-[#161d2b] to-[#0c1018] border border-brand-volt/30 shadow-2xl max-w-xs">
+                <div className="flex items-center gap-3 mb-2">
+                  <div className="w-8 h-8 rounded-lg bg-brand-volt/20 text-brand-volt flex items-center justify-center font-bold">
+                    <Trophy className="w-4 h-4" />
+                  </div>
+                  <span className="text-xs font-bold uppercase text-white">Championship Heritage</span>
+                </div>
+                <p className="text-xs text-slate-400">
+                  Home ground for over 18 state championships and collegiate athletic leagues.
+                </p>
+              </div>
+            </div>
+
+            {/* Right Column: Built For Athletes Information */}
+            <div className="space-y-5">
+              <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-white/5 border border-white/10 text-brand-volt">
+                <span className="w-1.5 h-1.5 rounded-full bg-brand-volt" /> Welcome to Sports Club
+              </div>
+
+              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black uppercase tracking-tight text-white leading-tight">
+                BUILT FOR ATHLETES. <br />
+                <span className="text-gradient-volt">ENGINEERED FOR EXCELLENCE.</span>
+              </h2>
+
+              <p className="text-slate-300 text-sm sm:text-base leading-relaxed text-justify sm:text-left">
+                Founded with a bold vision to elevate community and competitive athletics, <strong>Sports Club</strong> stands as the region’s premier multi-sport hub. Whether you are stepping onto the pitch for your first recreational match, perfecting your cover drive under the floodlit nets, or preparing for international competition, our facility offers unmatched infrastructure.
+              </p>
+
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-2">
+                <div className="p-3.5 rounded-xl bg-white/[0.02] border border-white/5">
+                  <div className="flex items-center gap-2 mb-1">
+                    <ShieldCheck className="w-4 h-4 text-brand-volt" />
+                    <h5 className="text-xs font-bold uppercase text-white">Pro Surfaces Only</h5>
+                  </div>
+                  <p className="text-xs text-slate-400">
+                    FIFA Pro turf, Robbins FIBA maple floors, and BWF synthetic mats that protect your joints.
+                  </p>
+                </div>
+
+                <div className="p-3.5 rounded-xl bg-white/[0.02] border border-white/5">
+                  <div className="flex items-center gap-2 mb-1">
+                    <HeartPulse className="w-4 h-4 text-brand-emerald" />
+                    <h5 className="text-xs font-bold uppercase text-white">Sports Science & Recovery</h5>
+                  </div>
+                  <p className="text-xs text-slate-400">
+                    Cold water plunges, infrared saunas, and certified physiotherapists on-site daily.
+                  </p>
+                </div>
+              </div>
+
+              <div className="pt-3 flex flex-wrap items-center gap-4">
+                <Link
+                  to="/about"
+                  className="px-6 py-3 rounded-full text-xs font-bold uppercase tracking-wider text-black bg-brand-volt hover:bg-[#bdec00] transition-colors shadow-lg shadow-brand-volt/20 flex items-center gap-2"
+                >
+                  <span>Our Story & Mission</span>
+                  <ChevronRight className="w-4 h-4" />
+                </Link>
+
+                <Link
+                  to="/membership"
+                  className="px-6 py-3 rounded-full text-xs font-bold uppercase tracking-wider text-white hover:text-brand-volt border border-white/20 hover:border-brand-volt/40 transition-colors"
+                >
+                  Explore Membership Plans
+                </Link>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      {/* 4. FEATURED SPORTS ACTIVITIES (With Filter Buttons) */}
       <section className="py-16 lg:py-20 bg-[#090D14] border-t border-white/10 relative">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           
@@ -85,7 +202,7 @@ export default function HomePage({ onOpenRegister, onOpenBooking }) {
         </div>
       </section>
 
-      {/* 4. MEMBERSHIP PREVIEW BANNER */}
+      {/* 5. MEMBERSHIP PREVIEW BANNER */}
       <section className="py-16 relative overflow-hidden">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="relative rounded-3xl p-8 sm:p-12 bg-gradient-to-br from-[#121824] via-[#0d121c] to-[#080b11] border border-white/10 overflow-hidden shadow-2xl">
@@ -148,7 +265,7 @@ export default function HomePage({ onOpenRegister, onOpenBooking }) {
         </div>
       </section>
 
-      {/* 5. COACHES & TRAINERS SPOTLIGHT - Wireframe Schematics */}
+      {/* 6. COACHES & TRAINERS SPOTLIGHT */}
       <section className="py-16 lg:py-20 bg-[#090D14] border-t border-white/10">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-10">
@@ -181,7 +298,7 @@ export default function HomePage({ onOpenRegister, onOpenBooking }) {
         </div>
       </section>
 
-      {/* 6. UPCOMING EVENTS & TOURNAMENTS */}
+      {/* 7. UPCOMING EVENTS & TOURNAMENTS */}
       <section className="py-16 lg:py-20 border-t border-white/10">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-10">
@@ -214,7 +331,7 @@ export default function HomePage({ onOpenRegister, onOpenBooking }) {
         </div>
       </section>
 
-      {/* 7. MEMBER TESTIMONIALS */}
+      {/* 8. MEMBER TESTIMONIALS */}
       <section className="py-16 lg:py-20 bg-[#090D14] border-t border-white/10">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-2xl mx-auto mb-12">
@@ -264,7 +381,7 @@ export default function HomePage({ onOpenRegister, onOpenBooking }) {
         </div>
       </section>
 
-      {/* 8. BOTTOM CTA */}
+      {/* 9. BOTTOM CTA */}
       <section className="py-16 relative overflow-hidden bg-gradient-to-b from-[#090D14] to-[#040609] border-t border-white/10">
         <div className="max-w-5xl mx-auto px-4 text-center">
           <span className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-brand-volt/10 text-brand-volt border border-brand-volt/30 text-xs font-bold uppercase tracking-wider mb-4">
