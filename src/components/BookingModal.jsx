@@ -6,8 +6,7 @@ import {
   CheckCircle2, 
   User, 
   Mail, 
-  Phone, 
-  Sparkles 
+  Phone
 } from 'lucide-react';
 import confetti from 'canvas-confetti';
 import { sportsList, coachesList } from '../data/sportsData';
@@ -207,7 +206,7 @@ export default function BookingModal({ isOpen, onClose, initialSport, initialCoa
                   type="submit"
                   className="w-full py-3 rounded-xl font-bold uppercase tracking-wider text-black bg-brand-volt hover:bg-[#bdec00] transition-colors shadow-lg shadow-brand-volt/20 flex items-center justify-center gap-2"
                 >
-                  <Sparkles className="w-4 h-4 fill-black" />
+                  <Calendar className="w-4 h-4 text-black" />
                   <span>Confirm Slot Reservation</span>
                 </button>
               </div>

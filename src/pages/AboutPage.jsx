@@ -6,7 +6,6 @@ import {
   ShieldCheck, 
   Users, 
   HeartHandshake, 
-  Sparkles, 
   CheckCircle2, 
   ArrowRight,
   MapPin,
@@ -48,14 +47,14 @@ export default function AboutPage({ onOpenRegister }) {
       {/* 1. Header Banner */}
       <section className="relative py-24 lg:py-32 overflow-hidden border-b border-white/10">
         <div className="absolute inset-0 bg-cover bg-center filter brightness-[0.25]"
-          style={{ backgroundImage: `url('https://images.unsplash.com/photo-1517649763962-0c623266ddc0?auto=format&fit=crop&w=1920&q=80')` }}
+          style={{ backgroundImage: `url('https://images.unsplash.com/photo-1522778119026-d647f0596c20?auto=format&fit=crop&w=1920&q=80')` }}
         />
         <div className="absolute inset-0 bg-gradient-to-t from-[#06080C] via-[#06080C]/80 to-transparent" />
         <div className="absolute top-1/3 left-1/2 -translate-x-1/2 w-96 h-96 bg-brand-volt/10 blur-[130px] pointer-events-none" />
 
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-white/10 text-brand-volt border border-white/15 mb-4">
-            <Sparkles className="w-3.5 h-3.5" /> Our Heritage & Purpose
+            Our Heritage & Purpose
           </span>
           <h1 className="text-4xl sm:text-6xl font-black uppercase text-white tracking-tight mb-6">
             ABOUT <span className="text-brand-volt">SPORTS CLUB</span>
@@ -223,21 +222,25 @@ export default function AboutPage({ onOpenRegister }) {
               <img
                 src="https://images.unsplash.com/photo-1540747913346-19e32dc3e97e?auto=format&fit=crop&w=600&q=80"
                 alt="Cricket Grounds"
+                onError={(e) => { e.target.onerror = null; e.target.src = 'https://images.unsplash.com/photo-1574629810360-7efbbe195018?auto=format&fit=crop&w=600&q=80'; }}
                 className="rounded-2xl object-cover h-52 w-full border border-white/10"
               />
               <img
                 src="https://images.unsplash.com/photo-1546519638-68e109498ffc?auto=format&fit=crop&w=600&q=80"
                 alt="Basketball Court"
+                onError={(e) => { e.target.onerror = null; e.target.src = 'https://images.unsplash.com/photo-1519861531473-9200262188bf?auto=format&fit=crop&w=600&q=80'; }}
                 className="rounded-2xl object-cover h-52 w-full border border-white/10 mt-6"
               />
               <img
                 src="https://images.unsplash.com/photo-1622279457486-62dcc4a431d6?auto=format&fit=crop&w=600&q=80"
                 alt="Tennis Match"
+                onError={(e) => { e.target.onerror = null; e.target.src = 'https://images.unsplash.com/photo-1554068865-24cecd4e34b8?auto=format&fit=crop&w=600&q=80'; }}
                 className="rounded-2xl object-cover h-52 w-full border border-white/10 -mt-6"
               />
               <img
                 src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=600&q=80"
                 alt="Gym & Recovery"
+                onError={(e) => { e.target.onerror = null; e.target.src = 'https://images.unsplash.com/photo-1517838277536-f5f99be501cd?auto=format&fit=crop&w=600&q=80'; }}
                 className="rounded-2xl object-cover h-52 w-full border border-white/10"
               />
             </div>

@@ -5,7 +5,6 @@ import {
   Star, 
   Award, 
   Calendar, 
-  Sparkles, 
   CheckCircle2, 
   Filter,
   Users
@@ -32,14 +31,14 @@ export default function CoachesPage({ onOpenBooking }) {
       {/* 1. Header Banner */}
       <section className="relative py-24 lg:py-32 overflow-hidden border-b border-white/10">
         <div className="absolute inset-0 bg-cover bg-center filter brightness-[0.25]"
-          style={{ backgroundImage: `url('https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=1920&q=80')` }}
+          style={{ backgroundImage: `url('https://images.unsplash.com/photo-1574629810360-7efbbe195018?auto=format&fit=crop&w=1920&q=80')` }}
         />
         <div className="absolute inset-0 bg-gradient-to-t from-[#06080C] via-[#06080C]/80 to-transparent" />
         <div className="absolute top-1/3 left-1/2 -translate-x-1/2 w-96 h-96 bg-brand-volt/10 blur-[130px] pointer-events-none" />
 
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-white/10 text-brand-volt border border-white/15 mb-4">
-            <Sparkles className="w-3.5 h-3.5" /> Elite Mentorship Roster
+            Elite Mentorship Roster
           </span>
           <h1 className="text-4xl sm:text-6xl font-black uppercase text-white tracking-tight mb-6">
             COACHES & <span className="text-brand-volt">TRAINERS</span>

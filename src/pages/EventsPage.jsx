@@ -5,7 +5,6 @@ import {
   Clock, 
   MapPin, 
   Users, 
-  Sparkles, 
   ArrowRight, 
   CheckCircle2, 
   Flame,
@@ -59,7 +58,7 @@ export default function EventsPage({ onOpenBooking }) {
 
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-white/10 text-brand-volt border border-white/15 mb-4">
-            <Sparkles className="w-3.5 h-3.5" /> Competitive Championship Calendar
+            Competitive Championship Calendar
           </span>
           <h1 className="text-4xl sm:text-6xl font-black uppercase text-white tracking-tight mb-6">
             EVENTS & <span className="text-brand-volt">TOURNAMENTS</span>

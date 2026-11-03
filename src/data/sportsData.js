@@ -6,7 +6,7 @@ export const sportsList = [
     tagline: 'World-Class Turfs & International Standard Nets',
     description: 'Experience international-standard cricket facilities with 6 floodlit all-weather practice nets, Merion turf pitches, high-speed automated bowling machines, and video analysis studios. Designed for both aspiring youth and veteran tournament teams.',
     image: 'https://images.unsplash.com/photo-1540747913346-19e32dc3e97e?auto=format&fit=crop&w=1200&q=80',
-    coverImage: 'https://images.unsplash.com/photo-1531415074868-036b1c57e329?auto=format&fit=crop&w=1200&q=80',
+    coverImage: 'https://images.unsplash.com/photo-1521537634581-0dced2fee2ef?auto=format&fit=crop&w=1200&q=80',
     icon: 'Trophy',
     stats: {
       courts: '6 Practice Nets + 1 Main Oval',
@@ -29,8 +29,8 @@ export const sportsList = [
     category: 'Team Sports',
     tagline: 'FIFA Quality Pro Certified Artificial & Natural Turf',
     description: 'Play on pristine FIFA-Quality Pro floodlit turf with shock-absorbing underlays that protect joints and enhance sprint performance. We host 11v11 weekend leagues, tactical coaching academies, and 5v5 cage tournaments under high-output LED floodlights.',
-    image: 'https://images.unsplash.com/photo-1508098682722-e99c43a406b2?auto=format&fit=crop&w=1200&q=80',
-    coverImage: 'https://images.unsplash.com/photo-1579952363873-27f3bade9f55?auto=format&fit=crop&w=1200&q=80',
+    image: 'https://images.unsplash.com/photo-1574629810360-7efbbe195018?auto=format&fit=crop&w=1200&q=80',
+    coverImage: 'https://images.unsplash.com/photo-1511886929837-354d827aae26?auto=format&fit=crop&w=1200&q=80',
     icon: 'Shield',
     stats: {
       courts: '2 Full 11v11 + 3 Five-a-side Arenas',
@@ -54,7 +54,7 @@ export const sportsList = [
     tagline: 'FIBA Standard Maple Hardwood & Outdoor Streetball Arenas',
     description: 'Elevate your game on climate-controlled, air-cushioned Canadian maple wood courts engineered to NBA and FIBA specs. Equipped with Spalding breakaway rims, Dr. Dish automated shooting rebounders, and dynamic scoreboard tech.',
     image: 'https://images.unsplash.com/photo-1546519638-68e109498ffc?auto=format&fit=crop&w=1200&q=80',
-    coverImage: 'https://images.unsplash.com/photo-1519766304817-4f37bda74a29?auto=format&fit=crop&w=1200&q=80',
+    coverImage: 'https://images.unsplash.com/photo-1519861531473-9200262188bf?auto=format&fit=crop&w=1200&q=80',
     icon: 'Flame',
     stats: {
       courts: '2 Indoor Courts + 2 Street 3v3 Courts',
@@ -78,7 +78,7 @@ export const sportsList = [
     tagline: 'BWF Grade-1 Synthetic Mat Courts with Anti-Glare Optics',
     description: 'Experience lightning-fast rallies on 8 BWF-approved cushioned synthetic vinyl courts. Featuring 11-meter ceiling heights, specialized anti-glare downward indirect LED illumination, and premium Yonex tournament stringing services on-site.',
     image: 'https://images.unsplash.com/photo-1626224583764-f87db24ac4ea?auto=format&fit=crop&w=1200&q=80',
-    coverImage: 'https://images.unsplash.com/photo-1613918108466-292b78a8ef95?auto=format&fit=crop&w=1200&q=80',
+    coverImage: 'https://images.unsplash.com/photo-1587280501635-68a0e82cd5ff?auto=format&fit=crop&w=1200&q=80',
     icon: 'Zap',
     stats: {
       courts: '8 Professional BWF Courts',
@@ -102,7 +102,7 @@ export const sportsList = [
     tagline: 'Plexicushion & Red Clay Courts with Smart Court Tech',
     description: 'Master your serve and backhand across our Grand Slam surfaces: 4 Plexicushion hard courts (Australian Open spec) and 2 clay courts. Complete with Spinshot player ball machines, smart line-call sensors, and private clubhouse viewing.',
     image: 'https://images.unsplash.com/photo-1622279457486-62dcc4a431d6?auto=format&fit=crop&w=1200&q=80',
-    coverImage: 'https://images.unsplash.com/photo-1595435934249-5df7ed86e1c0?auto=format&fit=crop&w=1200&q=80',
+    coverImage: 'https://images.unsplash.com/photo-1554068865-24cecd4e34b8?auto=format&fit=crop&w=1200&q=80',
     icon: 'Target',
     stats: {
       courts: '4 Hard Courts + 2 Red Clay Courts',
@@ -126,7 +126,7 @@ export const sportsList = [
     tagline: 'Olympic Free Weights, Cryotherapy & Hydrotherapy',
     description: 'Fuel your competitive edge with Eleiko barbells, Keiser pneumatic resistance machines, Woodway treadmills, cold plunge tubs, and infrared saunas to accelerate muscle rejuvenation.',
     image: 'https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=1200&q=80',
-    coverImage: 'https://images.unsplash.com/photo-1540497077202-7c8a3999166f?auto=format&fit=crop&w=1200&q=80',
+    coverImage: 'https://images.unsplash.com/photo-1517838277536-f5f99be501cd?auto=format&fit=crop&w=1200&q=80',
     icon: 'Activity',
     stats: {
       courts: '10,000 sq.ft Training Facility',
@@ -246,7 +246,6 @@ export const coachesList = [
     role: 'Head Cricket Coach & High Performance Director',
     experience: '16+ Years Experience',
     certification: 'ICC Level 3 Master Coach / Ex-Ranji Trophy Captain',
-    image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=600&q=80',
     rating: 4.9,
     studentsTrained: '450+ Athletes',
     bio: 'Former first-class cricketer with over a decade of national and franchise league experience. Specializes in technical batting biomechanics, power-hitting angles, and game-awareness strategy for youth and professional players.',
@@ -263,7 +262,6 @@ export const coachesList = [
     role: 'Technical Football Director',
     experience: '12+ Years Experience',
     certification: 'UEFA "A" License / AFC Elite Pro',
-    image: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=600&q=80',
     rating: 4.9,
     studentsTrained: '600+ Players',
     bio: 'Former academy coach at prestigious European clubs. Marcus implements cutting-edge possession play, transition pressing, and individual skill mastering with high-intensity European drills.',
@@ -280,7 +278,6 @@ export const coachesList = [
     role: 'Head Tennis Professional',
     experience: '14+ Years Experience',
     certification: 'PTR Master Professional & ITF Level 3',
-    image: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=600&q=80',
     rating: 5.0,
     studentsTrained: '320+ Tennis Competitors',
     bio: 'Former WTA top-200 ranked athlete. Elena blends aggressive baseline stroke geometry with modern footwork training to turn club players into tournament champions.',
@@ -297,7 +294,6 @@ export const coachesList = [
     role: 'Director of Basketball Development',
     experience: '10+ Years Experience',
     certification: 'USA Basketball Gold Coach & FIBA Licensed',
-    image: 'https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&w=600&q=80',
     rating: 4.8,
     studentsTrained: '500+ Hoop Stars',
     bio: 'Former NCAA Division-1 point guard and overseas professional. Known for his intense dribble clinics, game-read instincts, and lockdown defensive fundamentals.',
@@ -314,7 +310,6 @@ export const coachesList = [
     role: 'Chief Badminton Strategist',
     experience: '11+ Years Experience',
     certification: 'BWF Certified Coach Level 3',
-    image: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=600&q=80',
     rating: 4.9,
     studentsTrained: '400+ Players',
     bio: 'Former national team doubles specialist. Expert in deceptive wrist play, lightning court coverage, and split-second tactical anticipation for singles and doubles champions.',
@@ -331,7 +326,6 @@ export const coachesList = [
     role: 'Head of Athletic Performance & Science',
     experience: '9+ Years Experience',
     certification: 'PhD Sports Kinesiology / CSCS Certified',
-    image: 'https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&w=600&q=80',
     rating: 5.0,
     studentsTrained: '800+ Athletes',
     bio: 'Dr. Jenkins oversees load management, plyometrics, speed development, and injury prevention programs across all Sports Club disciplines.',
@@ -371,7 +365,7 @@ export const upcomingEvents = [
     teamsLimit: '24 Teams',
     registrationFee: '$150 per team',
     status: 'Fast Filling',
-    image: 'https://images.unsplash.com/photo-1579952363873-27f3bade9f55?auto=format&fit=crop&w=800&q=80',
+    image: 'https://images.unsplash.com/photo-1574629810360-7efbbe195018?auto=format&fit=crop&w=800&q=80',
     description: 'High-octane short-sided football festival. Fast transitions, dynamic cage goals, and spectator music lounges with DJ booth.'
   },
   {
@@ -417,7 +411,7 @@ export const upcomingEvents = [
     registrationFee: '$90 per squad',
     status: 'Early Bird Open',
     image: 'https://images.unsplash.com/photo-1546519638-68e109498ffc?auto=format&fit=crop&w=800&q=80',
-    description: 'Electric atmosphere under the floodlights with live hip-hop beats, dunk contest, and high-energy 3x3 halfcourt basketball.'
+    description: 'Electric atmosphere under the floodlights with live music beats, dunk contest, and high-energy 3x3 halfcourt basketball.'
   }
 ];
 
@@ -471,7 +465,7 @@ export const memberTestimonials = [
     name: 'Ananya Rao',
     role: 'Badminton State Quarter-Finalist',
     quote: 'The Taraflex synthetic flooring and zero-wind air ventilation make rallies smooth and effortless on the knees. Plus, the cold plunges in the recovery lounge are a total game changer.',
-    avatar: 'https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&w=200&q=80',
+    avatar: 'https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=200&q=80',
     rating: 5,
     sport: 'Badminton'
   },
@@ -480,7 +474,7 @@ export const memberTestimonials = [
     name: 'Tariq Al-Mansoor',
     role: 'Weekend Football League Captain',
     quote: 'From the booking system on the app to the pristine FIFA standard turf, Sports Club sets the gold benchmark. Our team looks forward to Friday nights under the lights all week long.',
-    avatar: 'https://images.unsplash.com/photo-1570295999919-56ceb5ecca61?auto=format&fit=crop&w=200&q=80',
+    avatar: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=200&q=80',
     rating: 5,
     sport: 'Football'
   }

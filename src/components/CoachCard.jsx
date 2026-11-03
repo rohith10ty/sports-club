@@ -1,45 +1,46 @@
 import { Star, Award, Calendar, CheckCircle2 } from 'lucide-react';
+import WireframeCoachArt from './WireframeCoachArt';
 
 export default function CoachCard({ coach, onBookCoach }) {
   return (
     <div className="glass-card rounded-2xl sm:rounded-3xl overflow-hidden flex flex-col group transition-all duration-300 hover:-translate-y-1 hover:border-brand-volt/40">
-      {/* Coach Photo & Header Badges */}
-      <div className="relative h-72 overflow-hidden bg-slate-900">
-        <img
-          src={coach.image}
-          alt={coach.name}
-          className="w-full h-full object-cover object-top transition-transform duration-500 group-hover:scale-105"
+      {/* High-Tech Wireframe Schematic Graphic */}
+      <div className="relative h-64 overflow-hidden bg-[#070A10]">
+        <WireframeCoachArt
+          sport={coach.sport}
+          name={coach.name}
+          id={coach.id}
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-[#121824] via-transparent to-black/20" />
 
-        {/* Top Sport Pill */}
-        <div className="absolute top-4 left-4 right-4 flex items-center justify-between">
-          <span className="px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-black/70 backdrop-blur-md text-brand-volt border border-brand-volt/30">
+        {/* Top Badges */}
+        <div className="absolute top-3 left-3 right-3 flex items-center justify-between z-20 pointer-events-none">
+          <span className="px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-black/80 backdrop-blur-md text-brand-volt border border-brand-volt/40 shadow-lg">
             {coach.sport}
           </span>
-          <div className="flex items-center gap-1 px-2.5 py-1 rounded-full text-xs font-bold bg-black/70 backdrop-blur-md text-amber-400 border border-white/10">
+          <div className="flex items-center gap-1 px-2.5 py-1 rounded-full text-xs font-bold bg-black/80 backdrop-blur-md text-amber-400 border border-white/10 shadow-lg">
             <Star className="w-3.5 h-3.5 fill-amber-400 text-amber-400" />
             <span>{coach.rating}</span>
           </div>
         </div>
 
-        {/* Floating Coach Info */}
-        <div className="absolute bottom-4 left-4 right-4">
-          <span className="text-[11px] font-bold uppercase tracking-wider text-brand-volt block mb-0.5">
+        {/* Floating Coach Title Bar */}
+        <div className="absolute bottom-2 left-3 right-3 z-20 pointer-events-none">
+          <span className="text-[10px] font-mono uppercase font-bold tracking-wider text-brand-volt block">
             {coach.experience}
           </span>
-          <h3 className="text-xl sm:text-2xl font-black text-white uppercase tracking-tight">
+          <h3 className="text-lg sm:text-xl font-black text-white uppercase tracking-tight drop-shadow-md">
             {coach.name}
           </h3>
-          <p className="text-xs text-slate-300 font-medium">
-            {coach.role}
-          </p>
         </div>
       </div>
 
       {/* Details & Bio */}
       <div className="p-6 flex-1 flex flex-col justify-between space-y-4">
         <div>
+          <span className="text-xs text-brand-volt font-bold block mb-3">
+            {coach.role}
+          </span>
+
           {/* Certification Badge */}
           <div className="p-2.5 rounded-xl bg-white/[0.03] border border-white/10 text-xs text-slate-300 mb-3 flex items-start gap-2">
             <Award className="w-4 h-4 text-brand-volt shrink-0 mt-0.5" />

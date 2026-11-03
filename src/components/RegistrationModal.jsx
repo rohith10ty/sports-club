@@ -1,7 +1,6 @@
 import { useState, useEffect } from 'react';
 import { 
   X, 
-  Sparkles, 
   CheckCircle2, 
   ShieldCheck, 
   CreditCard, 
@@ -127,7 +126,7 @@ export default function RegistrationModal({ isOpen, onClose, preselectedPlanId }
           <div className="p-6 sm:p-8">
             <div className="mb-6">
               <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-brand-volt/10 text-brand-volt border border-brand-volt/20 mb-2">
-                <Sparkles className="w-3.5 h-3.5" /> Official Member Registration
+                <ShieldCheck className="w-3.5 h-3.5" /> Official Member Registration
               </div>
               <h3 className="text-2xl sm:text-3xl font-extrabold text-white tracking-tight">
                 Join <span className="text-brand-volt">Sports Club</span>
@@ -312,10 +311,7 @@ export default function RegistrationModal({ isOpen, onClose, preselectedPlanId }
                   {isSubmitting ? (
                     <div className="w-5 h-5 border-2 border-black border-t-transparent rounded-full animate-spin" />
                   ) : (
-                    <>
-                      <Sparkles className="w-4 h-4 fill-black" />
-                      <span>Complete Registration & Activate Pass</span>
-                    </>
+                    <span>Complete Registration & Activate Pass</span>
                   )}
                 </button>
               </div>

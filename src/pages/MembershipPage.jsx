@@ -2,7 +2,6 @@ import { useState } from 'react';
 import { 
   Check, 
   X, 
-  Sparkles, 
   ShieldCheck, 
   HelpCircle, 
   User, 
@@ -118,7 +117,7 @@ export default function MembershipPage() {
 
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-white/10 text-brand-volt border border-white/15 mb-4">
-            <Sparkles className="w-3.5 h-3.5" /> Flexible Athletic Plans
+            Flexible Athletic Plans
           </span>
           <h1 className="text-4xl sm:text-6xl font-black uppercase text-white tracking-tight mb-6">
             MEMBERSHIP & <span className="text-brand-volt">PRICING</span>
@@ -481,10 +480,7 @@ export default function MembershipPage() {
                       {isSubmitting ? (
                         <div className="w-5 h-5 border-2 border-black border-t-transparent rounded-full animate-spin" />
                       ) : (
-                        <>
-                          <Sparkles className="w-4 h-4 fill-black" />
-                          <span>Submit Registration & Get Digital Pass</span>
-                        </>
+                        <span>Submit Registration & Get Digital Pass</span>
                       )}
                     </button>
                   </div>

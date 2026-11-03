@@ -4,11 +4,9 @@ import {
   Menu, 
   X, 
   Zap, 
-  Trophy, 
   ChevronRight, 
   PhoneCall, 
-  Calendar,
-  Sparkles
+  Calendar
 } from 'lucide-react';
 
 export default function Navbar() {
@@ -49,29 +47,26 @@ export default function Navbar() {
       <nav
         className={`w-full transition-all duration-300 ${
           scrolled
-            ? 'bg-[#06080C]/90 backdrop-blur-xl border-b border-white/10 shadow-2xl shadow-black/60 py-3'
-            : 'bg-[#06080C]/60 backdrop-blur-md border-b border-white/5 py-4'
+            ? 'bg-[#06080C]/95 backdrop-blur-xl border-b border-white/10 shadow-2xl shadow-black/60 py-3'
+            : 'bg-[#06080C]/80 backdrop-blur-md border-b border-white/5 py-4'
         }`}
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between">
-            {/* Brand Logo */}
+            {/* Brand Logo - Clean, bold, without distracting ping marks */}
             <Link
               to="/"
               className="flex items-center gap-3 group focus:outline-none"
             >
-              <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-brand-volt to-emerald-400 p-[2px] transition-transform duration-300 group-hover:scale-105 group-hover:shadow-[0_0_20px_rgba(212,255,0,0.4)]">
+              <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-brand-volt to-emerald-400 p-[2px] transition-transform duration-300 group-hover:scale-105">
                 <div className="w-full h-full bg-[#06080C] rounded-[10px] flex items-center justify-center">
                   <Zap className="w-5 h-5 text-brand-volt fill-brand-volt transition-transform group-hover:rotate-12" />
                 </div>
               </div>
               <div className="flex flex-col">
-                <div className="flex items-center gap-1.5">
-                  <span className="text-xl sm:text-2xl font-black tracking-tight text-white uppercase font-sans">
-                    Sports <span className="text-brand-volt">Club</span>
-                  </span>
-                  <span className="w-2 h-2 rounded-full bg-brand-volt animate-ping" />
-                </div>
+                <span className="text-xl sm:text-2xl font-black tracking-tight text-white uppercase font-sans">
+                  Sports <span className="text-brand-volt">Club</span>
+                </span>
                 <span className="text-[10px] uppercase font-bold tracking-widest text-slate-400 -mt-1 hidden sm:block">
                   Premier Athletic Campus
                 </span>
@@ -97,7 +92,7 @@ export default function Navbar() {
               ))}
             </div>
 
-            {/* Desktop CTA actions */}
+            {/* Desktop CTA actions - Clean Join Now without star */}
             <div className="hidden md:flex items-center gap-3">
               <Link
                 to="/sports"
@@ -109,9 +104,8 @@ export default function Navbar() {
               
               <Link
                 to="/membership"
-                className="relative inline-flex items-center justify-center px-5 py-2.5 rounded-full text-xs font-bold uppercase tracking-wider text-black bg-brand-volt hover:bg-[#bdec00] transition-all duration-300 shadow-[0_0_20px_rgba(212,255,0,0.35)] hover:shadow-[0_0_28px_rgba(212,255,0,0.6)] hover:-translate-y-0.5 active:translate-y-0"
+                className="relative inline-flex items-center justify-center px-6 py-2.5 rounded-full text-xs font-extrabold uppercase tracking-wider text-black bg-brand-volt hover:bg-[#bdec00] transition-all duration-300 shadow-[0_0_20px_rgba(212,255,0,0.35)] hover:shadow-[0_0_28px_rgba(212,255,0,0.6)] hover:-translate-y-0.5 active:translate-y-0"
               >
-                <Sparkles className="w-3.5 h-3.5 mr-1.5 fill-black" />
                 <span>Join Now</span>
               </Link>
             </div>
@@ -120,9 +114,9 @@ export default function Navbar() {
             <div className="flex md:hidden items-center gap-2">
               <Link
                 to="/membership"
-                className="px-3 py-1.5 rounded-full text-[11px] font-bold uppercase tracking-wider text-black bg-brand-volt"
+                className="px-3.5 py-1.5 rounded-full text-[11px] font-bold uppercase tracking-wider text-black bg-brand-volt"
               >
-                Join
+                Join Now
               </Link>
               <button
                 onClick={() => setIsOpen(!isOpen)}
@@ -162,9 +156,8 @@ export default function Navbar() {
               <div className="pt-4 border-t border-white/10 mt-4 space-y-3">
                 <Link
                   to="/membership"
-                  className="w-full flex items-center justify-center gap-2 py-3.5 px-4 rounded-xl text-center text-sm font-bold uppercase tracking-wider text-black bg-brand-volt shadow-[0_0_20px_rgba(212,255,0,0.3)]"
+                  className="w-full flex items-center justify-center py-3.5 px-4 rounded-xl text-center text-sm font-bold uppercase tracking-wider text-black bg-brand-volt shadow-[0_0_20px_rgba(212,255,0,0.3)]"
                 >
-                  <Sparkles className="w-4 h-4" />
                   <span>Join Sports Club Now</span>
                 </Link>
 

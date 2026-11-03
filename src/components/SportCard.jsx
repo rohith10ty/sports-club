@@ -19,6 +19,10 @@ export default function SportCard({ sport, onBook, onSelect }) {
         <img
           src={sport.image}
           alt={sport.name}
+          onError={(e) => {
+            e.target.onerror = null;
+            e.target.src = 'https://images.unsplash.com/photo-1540747913346-19e32dc3e97e?auto=format&fit=crop&w=1200&q=80';
+          }}
           className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-108"
         />
         <div className="absolute inset-0 bg-gradient-to-t from-[#121824] via-transparent to-black/30" />

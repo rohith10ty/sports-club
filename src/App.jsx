@@ -2,7 +2,6 @@ import { useState } from 'react';
 import { Routes, Route } from 'react-router-dom';
 import useLenis from './hooks/useLenis';
 import ScrollToTop from './components/ScrollToTop';
-import NotificationBanner from './components/NotificationBanner';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import RegistrationModal from './components/RegistrationModal';
@@ -45,9 +44,6 @@ export default function App() {
   return (
     <div className="flex flex-col min-h-screen bg-[#06080C] text-slate-100 font-sans selection:bg-[#D4FF00] selection:text-black">
       <ScrollToTop />
-      
-      {/* Top Bulletin Ticker */}
-      <NotificationBanner />
 
       {/* Main Sticky Glass Navbar */}
       <Navbar />

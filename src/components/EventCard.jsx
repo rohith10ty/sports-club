@@ -8,6 +8,10 @@ export default function EventCard({ event, onRegisterEvent }) {
         <img
           src={event.image}
           alt={event.title}
+          onError={(e) => {
+            e.target.onerror = null;
+            e.target.src = 'https://images.unsplash.com/photo-1540747913346-19e32dc3e97e?auto=format&fit=crop&w=800&q=80';
+          }}
           className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-108"
         />
         <div className="absolute inset-0 bg-gradient-to-t from-[#121824] via-black/40 to-black/20" />

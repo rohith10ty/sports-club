@@ -10,7 +10,6 @@ import {
   Check, 
   Calendar, 
   Clock, 
-  Sparkles, 
   X,
   ArrowRight,
   Info
@@ -52,7 +51,7 @@ export default function SportsPage({ onOpenBooking, onOpenRegister }) {
 
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-white/10 text-brand-volt border border-white/15 mb-4">
-            <Sparkles className="w-3.5 h-3.5" /> 5 Dedicated Championship Arenas
+            5 Dedicated Championship Arenas
           </span>
           <h1 className="text-4xl sm:text-6xl font-black uppercase text-white tracking-tight mb-6">
             SPORTS & <span className="text-brand-volt">ACTIVITIES</span>
@@ -149,6 +148,10 @@ export default function SportsPage({ onOpenBooking, onOpenRegister }) {
               <img
                 src={activeModalSport.coverImage || activeModalSport.image}
                 alt={activeModalSport.name}
+                onError={(e) => {
+                  e.target.onerror = null;
+                  e.target.src = 'https://images.unsplash.com/photo-1540747913346-19e32dc3e97e?auto=format&fit=crop&w=1200&q=80';
+                }}
                 className="w-full h-full object-cover"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-[#0d121c] via-black/40 to-transparent" />
